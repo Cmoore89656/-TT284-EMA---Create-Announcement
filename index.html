@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title> TT284: EMA - Create Announcement</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>TT284: EMA - Create Announcement</title>
 </head>
 
 <body>
@@ -36,12 +36,33 @@
                 <div class="bottom"></div>
             </div>
         </nav>
-
-        <section>
+    </header>
+    <main>
+        <section class="heading">
             <h1>Create Announcement</h1>
         </section>
+        <section class="form-container">
+            <form action="" method="post">
+                <label for="announceId" hidden></label>
 
-    </header>
+                <input type="text" name="announceId" value="1234abcd-5678-9090-efef" hidden />
+
+                <label for="title">Title:</label>
+
+                <input type="text" name="title" id="title" placeholder="Title" />
+
+                <label for="message">Message:</label>
+
+                <input type="text" name="message" id="message" />
+
+                <label for="liveDate">Live Date</label>
+
+                <input type="date" name="liveDate" id="liveDate" />
+
+                <button type="submit">submit</button>
+            </form>
+        </section>
+    </main>
 
     <script src="/app.js"></script>
 </body>
