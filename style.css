@@ -63,44 +63,41 @@
     .menu {
         display: none;
     }
-
-    h1{
+    
+    h1 {
         margin: 1.5rem 7.5rem;
         text-decoration: underline;
     }
-
+    
     label {
         display: inline-block;
         width: 150px;
         text-align: right;
         vertical-align: middle;
-        }
-
-    input, textarea{
+    }
+    
+    input,
+    textarea {
         width: 25%;
     }
-
+    
     textarea {
         vertical-align: middle;
         min-height: 75px;
         min-width: 25%;
     }
-
-
-
-    form > div{
-        margin:1.5rem;
+    
+    form>div {
+        margin: 1.5rem;
     }
-
+    
     button {
         margin-left: 11.7%;
-        width:10%;
-        padding: .5rem; 
+        width: 10%;
+        padding: .5rem;
     }
-
-
     
-    @media only screen and (max-device-width: 850px) {
+    @media only screen and (max-device-width: 375px) {
         .logo {
             font-size: 20px;
         }
@@ -127,6 +124,35 @@
         .menu {
             display: block;
             cursor: pointer;
+        }
+        h1 {
+            margin: 0;
+            text-align: center;
+            margin-top: 1rem;
+            ;
+        }
+        label {
+            width: 100%;
+            text-align: center;
+            margin-bottom: .1rem;
+        }
+        input,
+        textarea,
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 75%;
+            margin: 1rem 1rem 1rem 3rem;
+            padding: .5rem;
+        }
+        input[name=announceId] {
+            display: none;
+        }
+        input[type="date"] {
+            display: block;
+            -webkit-appearance: textfield;
+            -moz-appearance: textfield;
         }
     }
     
