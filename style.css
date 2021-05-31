@@ -63,6 +63,42 @@
     .menu {
         display: none;
     }
+
+    h1{
+        margin: 1.5rem 7.5rem;
+        text-decoration: underline;
+    }
+
+    label {
+        display: inline-block;
+        width: 150px;
+        text-align: right;
+        vertical-align: middle;
+        }
+
+    input, textarea{
+        width: 25%;
+    }
+
+    textarea {
+        vertical-align: middle;
+        min-height: 75px;
+        min-width: 25%;
+    }
+
+
+
+    form > div{
+        margin:1.5rem;
+    }
+
+    button {
+        margin-left: 11.7%;
+        width:10%;
+        padding: .5rem; 
+    }
+
+
     
     @media only screen and (max-device-width: 850px) {
         .logo {
